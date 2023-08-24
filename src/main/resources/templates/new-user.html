@@ -8,37 +8,39 @@
 
 </head>
 <body>
-<div class="box-container">
-    <div class="box-buttons">
-        <a href="/login" class="btn btn-outline-success">Iniciar Sesión</a>
-        <a href="/newUser" class="btn btn-danger">Registro Sesión</a>
-    </div>
-    <div class="box-form">
-        <form action="/homepage" method="post">
-            <div class="box-title">
-                <h2>Registro de nuevo usuario</h2>
-            </div>
-            <div class="mb-3">
-                <input aria-label="fullname" type="text" class="form-control" id="fullname" name="fullname" placeholder="Nombres completos" required>
-            </div>
-            <div class="mb-3">
-                <input aria-label="user" type="text" class="form-control" id="user" name="user" placeholder="Usuario" required>
-            </div>
-            <div class="mb-3">
-                <input aria-label="email" type="email" class="form-control" id="email" name="email" placeholder="Correo" required>
-            </div>
-            <div class="mb-3">
-                <input aria-label="password" type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
-            </div>
-            <div class="mb-3">
-                <input aria-label="confirm-password" type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Repita su contraseña" required>
-            </div>
+<div class="body-container">
+    <div class="box-container">
+        <div class="box-buttons">
+            <a href="/login" class="btn btn-outline-success">Iniciar Sesión</a>
+            <a href="/newUser" class="btn btn-danger">Registro Sesión</a>
+        </div>
+        <div class="box-form">
+            <form action="/homepage" method="post">
+                <div class="box-title">
+                    <h2>Registro de nuevo usuario</h2>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="fullname" type="text" class="form-control" id="fullname" name="fullname" placeholder="Nombres completos" required>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="user" type="text" class="form-control" id="user" name="user" placeholder="Usuario" required>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="email" type="email" class="form-control" id="email" name="email" placeholder="Correo" required>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="password" type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="confirm-password" type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Repita su contraseña" required>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Crear usuario</button>
-        </form>
-    </div>
-    <div class="box-link">
-        <a href="/forgot-password">¿Has olvidado tu contraseña?</a>
+                <button type="submit" class="btn btn-primary">Crear usuario</button>
+            </form>
+        </div>
+        <div class="box-link">
+            <a href="/forgot-password">¿Has olvidado tu contraseña?</a>
+        </div>
     </div>
 </div>
 
