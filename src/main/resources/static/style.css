@@ -4,7 +4,7 @@ body{
     /* <!-- Este es un tipo de fuente que se puede cambiar--> */
     /* <!-- Manipular esto para cambiar el fondo--> */
     background-color: #110e0e;
-    background-image:url(../resources/fondoInicio.jpg);
+    background-image:url(/resources/fondoInicio.jpg);
     background-size: cover;
     display: flex;
     min-height: 100vh;
