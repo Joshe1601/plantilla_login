@@ -1,0 +1,122 @@
+body{
+    /* <!-- Este es un tipo de fuente que se puede cambiar--> */
+    font-family: 'Poppins', sans-serif;
+    /* <!-- Este es un tipo de fuente que se puede cambiar--> */
+    /* <!-- Manipular esto para cambiar el fondo--> */
+    background-color: #110e0e;
+    background-image:url(../resources/fondoInicio.jpg);
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    /* <!-- Manipular esto para cambiar el fondo--> */
+}
+
+.box-container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+}
+
+.box-form{
+    text-align: center;
+    color: #05a90f;
+    border-bottom: rgba(108, 108, 108, 0.49) solid 1px;
+    border-top: rgba(108, 108, 108, 0.49) solid 1px;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.box-link{
+    text-align: center;
+    margin: 20px;
+}
+
+.box-switch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-switch p {
+    margin: 0;
+}
+
+.switch {
+    /*<!-- Manipular esto para el margen entre el switch y el texto--> */
+    margin-right: 10px;
+    /*<!-- Manipular esto para el margen entre el switch y el texto--> */
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    /*<!-- Manipular esto para el tamaño de la cajita del switch--> */
+    width: 60px;
+    height: 34px;
+    /*<!-- Manipular esto para el tamaño de la cajita del switch--> */
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    /*<!-- Manipular esto para cambiar la bolita blanca del switch--> */
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    /*<!-- Manipular esto para cambiar la bolita blanca del switch--> */
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    /*<!-- Manipular esto para cambiar el color del activado--> */
+    background-color: #05a90f;
+    /*<!-- Manipular esto para cambiar el color del activado--> */
+}
+
+input:focus + .slider {
+    /*<!-- Manipular esto para cambiar el color del borde de la cajita--> */
+    box-shadow: 0 0 1px #05a90f;
+    /*<!-- Manipular esto para cambiar el color del borde de la cajita--> */
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

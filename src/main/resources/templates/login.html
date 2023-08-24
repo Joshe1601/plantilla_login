@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telecripto</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="box-container">
+        <div class="box-buttons">
+            <a href="/login" class="btn btn-success">Iniciar Sesión</a>
+            <a href="/new-user" class="btn btn-outline-danger">Registro</a>
+        </div>
+        <div class="box-form">
+            <form action="/homepage" method="post">
+                <div class="box-title">
+                    <h2>Bienvenido a Telecripto</h2>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="username" type="text" class="form-control" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="mb-3">
+                    <input aria-label="password" type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="box-switch">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Recordar contraseña</p>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+        <div class="box-link">
+            <a href="/forgot-password">¿Has olvidado tu contraseña?</a>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
