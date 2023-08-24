@@ -1,9 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Telecripto</title>
+    <link th:href="@{/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/style.css}" rel="stylesheet"/>
+
 </head>
 <body>
+    <header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <div class="nav-link">
+                    <a href="#">Billetera</a>
+                    <a href="#">Cambio</a>
+                </div>
+                <div class="nav-search">
+                    <form>
+                        <input aria-label="buscar" type="text" placeholder="Buscar divisas">
+                    </form>
+                </div>
+                <div class="nav-buttons">
+                    <a class="btn btn-success" href="/login">Inicio Sesión</a>
+                    <a class="btn btn-dark" href="/newUser">Cerrar Sesión</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="seccion-coins">
+                <h5>La forma más popular del mundo para comprar, vender e intercambiar monedas</h5>
+                <img th:src="@{/resources/monedas.png}" alt="Monedas">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="seccion-sale">
+                    <h5>1) Binance Coin (BNB)</h5>
+                    <p>BNB se lanzó a través de una oferta inicial de monedas en 2017, 11 días antes de que el exchange de criptomonedas Binance se pusiera en marcha.
+                        Originalmente se emitió como un token ERC-20 que se ejecutaba en la red de Ethereum, con un suministro total limitado a 200 millones de monedas
+                        y 100 millones de BNB ofrecidos en la ICO. El precio actual es de $450 cada uno</p>
+                    <p style="color: orange">BNB tuvo una bajada del 60% en las ultimas 24 horas!</p>
+                </div>
+                <div class="seccion-buttons">
+                    <a href="/login" class="btn btn-success">Comprar</a>
+                    <a href="/newUser" class="btn btn-danger">Vender</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="seccion-sale">
+                    <h5>2) Cardano (ADA)</h5>
+                    <p>Cardano es una plataforma de blockchain de prueba de participación cuyo objetivo es permitir que los usuarios que sean "pioneros, innovadores y visionarios"
+                        traigan consigo un cambio global positivo a la red. Este proyecto de código abierto también pretende “redistribuir el poder de las estructuras contables
+                        entre los individuos marginados". El precio actual es de $2.52 cada uno</p>
+                    <p style="color: green">BNB tuvo una bajada del 60% en las ultimas 24 horas!</p>
+                </div>
+                <div class="seccion-buttons">
+                    <a href="/login" class="btn btn-success">Comprar</a>
+                    <a href="/newUser" class="btn btn-danger">Vender</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
